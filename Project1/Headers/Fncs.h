@@ -1,7 +1,5 @@
-
-typedef char ch8;
-typedef int u16; 
-typedef signed int u32;   
+#ifndef Fncs_h
+#define Fncs_h
 
 
 //imp fncs
@@ -12,8 +10,6 @@ void swap (float*x,float *y);
 void displayALL(ch8 Name[][40],u16 *C1,u16 *C2,u16 *C3,u16 *C4,float * Avg);
 
 void GetTotalFail_Succ(float *Avg);
-//Main window
-void MainWin(ch8 Name[][40],u16 *C1,u16 *C2,u16 *C3,u16 *C4,ch8*State,float *Avg);
 
 //Student option 1 fnc
 void Option1(ch8 Name[][40],u16 *C1,u16 *C2,u16 *C3,u16 *C4,ch8 *State,float*Avg);
@@ -26,3 +22,4 @@ void DisplayDegree(u16 *C1,u16 *C2,u16 *C3,u16 *C4,u16 StudentIndex,ch8 Name[][4
 void DisplayHigh5(ch8 Name[][40],u16 *C1,u16 *C2,u16 *C3,u16 *C4,ch8* State,float *Avg);
 // option 3 fnc
 void Displaylow5(ch8 Name[][40],u16 *C1,u16 *C2,u16 *C3,u16 *C4,ch8* State,float *Avg);
+#endif
